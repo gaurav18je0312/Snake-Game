@@ -1,0 +1,67 @@
+*{
+    padding: 0%;
+    margin: 0%
+}
+.body{
+    background-image: url(images/board.png);
+    display: grid;
+    grid-template-columns: 450px 1fr 400px;
+    
+}
+.scoreboard{
+    margin: 20px;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    text-align: center;
+    justify-content: center;
+    background-image: url(images/block.png);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+}
+.score-print{
+    padding-top: 60px;
+    padding-right: 60px;
+    font-size: xx-large;
+}
+.heading{
+    padding: 10px;
+
+    justify-content: center;
+    text-align: center;
+}
+.name{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+div.btn img{
+    cursor: pointer;
+}
+div.btn img:active{
+    transform: scale(1.2);
+}
+#board{
+    background:rgb(139, 189, 98);
+    
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid rgb(44, 86, 2);
+    display: grid;
+    text-align: center;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr); 
+}
+.food{
+    background: url('images/apple1.png');
+    background-repeat: no-repeat;
+}
+.snake{
+    background: green;
+    margin: 1px;
+    border-radius: 10px;
+}
+.head{
+    background: url('images/head.png');
+    background-repeat: no-repeat;
+
+}
