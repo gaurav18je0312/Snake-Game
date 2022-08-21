@@ -2,21 +2,20 @@
     padding: 0%;
     margin: 0%
 }
+body{
+    background: url(images/board.png);
+    background-repeat: repeat;
+}
 .body{
-    background-image: url(images/board.png);
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 1fr 2fr 1fr;
     
 }
 .scoreboard{
-    margin: 20px;
-    margin-top: 60px;
-    margin-bottom: 200px;
+    color: rgb(39, 36, 39);
     text-align: center;
+    font-weight: 800;
     justify-content: center;
-    background-image: url(images/block.png);
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
 }
 .score-print{
     padding-top: 60px;
@@ -25,7 +24,7 @@
 }
 .heading{
     padding: 10px;
-
+    height: fit-content;
     justify-content: center;
     text-align: center;
 }
@@ -64,4 +63,16 @@ div.btn img:active{
     background: url('images/head.png');
     background-repeat: no-repeat;
 
+}
+@media  screen and (max-width: 1024px) {
+    .body{
+        padding: 1rem;
+        grid-template-columns: 2fr 1fr;
+    }
+    .heading{
+        display: none;
+    }
+    .scoreboard{
+        background: transparent;
+    }
 }
